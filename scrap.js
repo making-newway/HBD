@@ -12,7 +12,7 @@ function setup() {
     let t = 0;
     createCanvas(windowWidth, windowHeight);
     
-    for(let i = 0; i < neme.length; i+=2) {
+    for(let i = 0; i < nemeArka.length; i+=2) {
         x.push(nemeArka[i].x);
         y.push(nemeArka[i].y);
     }

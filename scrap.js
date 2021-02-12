@@ -1,4 +1,5 @@
 var angle = 0;
+var song;
 var particle = [];
 var font;
 var drawing;
@@ -7,6 +8,10 @@ var x = [];
 let fort;
 let c = [];
 let e = 0;
+
+function preload() {
+    song = loadSound("Song.mp3");
+}    
 
 function setup() {
     let t = 0;
@@ -21,6 +26,8 @@ function setup() {
 
     fortX.sort((a, b) => b.amp - a.amp);
     fortY.sort((a, b) => b.amp - a.amp);
+    
+    song.play();
 }
 function draw() {
     background(17);

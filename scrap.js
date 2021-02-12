@@ -7,11 +7,7 @@ var y = [];
 var x = [];
 let fort;
 let c = [];
-let e = 0;
-
-function preload() {
-    song = loadSound("Song.mp3");
-}    
+let e = 0; 
 
 function setup() {
     let t = 0;
@@ -27,6 +23,10 @@ function setup() {
     fortX.sort((a, b) => b.amp - a.amp);
     fortY.sort((a, b) => b.amp - a.amp);
     
+    song = loadSound("Song.mp3", loaded);
+}
+
+function loaded() {
     song.play();
 }
 function draw() {
